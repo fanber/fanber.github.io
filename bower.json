@@ -1,0 +1,26 @@
+{
+  "name": "fanber.github.io",
+  "description": "fanber site source",
+  "main": "index.html",
+  "authors": [
+    "Paul Radzkov"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fanber/fanber.github.io",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "modernizr": "~3.2.0",
+    "jquery": "~2.1.4"
+  }
+}

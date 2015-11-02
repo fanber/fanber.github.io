@@ -1,0 +1,39 @@
+{
+  "name": "fanber.github.io",
+  "version": "1.0.0",
+  "description": "fanber site source",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanber/fanber.github.io.git"
+  },
+  "author": "Paul Radzkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fanber/fanber.github.io/issues"
+  },
+  "homepage": "https://github.com/fanber/fanber.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "bower": "^1.6.5",
+    "cssnano": "^3.3.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ftp-deploy": "^0.1.10",
+    "grunt-modernizr": "^1.0.1",
+    "grunt-postcss": "^0.7.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-shell": "^1.1.2",
+    "pixrem": "^3.0.0",
+    "postcss-style-guide": "^0.9.0"
+  }
+}
