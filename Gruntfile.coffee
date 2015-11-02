@@ -1,5 +1,7 @@
 # Grunt Configuration
 # http://gruntjs.com/getting-started#an-example-gruntfile
+fs = require('fs')
+processedCSS = fs.readFileSync('out/css/template.css', 'utf-8');
 
 module.exports = (grunt) ->
 
@@ -23,11 +25,16 @@ module.exports = (grunt) ->
 				# or
 				map:
 					inline: false # save all sourcemaps as separate files...
-					annotation: 'out/css/maps/' # ...to the specified directory
+					annotation: 'out/css/' # ...to the specified directory
 
 				processors: [
 					require('pixrem')() # add fallbacks for rem units
-					require('autoprefixer-core')({browsers: [
+					require('postcss-style-guide')({
+						name: 'fanber.by',
+						processedCSS: processedCSS,
+						dir: 'out/docs'
+					})
+					require('autoprefixer')({browsers: [
 						'Android 2.3'
 						'Android >= 4'
 						'Chrome >= 20'
@@ -41,6 +48,15 @@ module.exports = (grunt) ->
 				]
 			dist:
 				src: 'out/css/template.css'
+
+		copy:
+			main:
+				files: [{
+					expand: true
+					cwd: 'src/'
+					src: ['**']
+					dest: 'out/'
+				}]
 
 		#minify css
 		cssmin:
@@ -76,11 +92,6 @@ module.exports = (grunt) ->
 			out:
 				files:
 					'out/js/isotope-settings.js':'out/js/isotope-settings.js'
-
-		#clean files
-		clean:
-			sass:
-				'out/sass'
 
 		modernizr:
 			dist:
@@ -140,17 +151,59 @@ module.exports = (grunt) ->
 				# Have custom Modernizr tests? Add paths to their location here.
 				customTests: []
 
+		# track changes in src dir and do tasks
+		watch:
+			src:
+				files: ['src/**/*']
+				tasks: [
+					'default'
+				]
+			out:
+				files: ['out/**/*']
+				options:
+					livereload: true
+
+		# start server
+		connect:
+			server:
+				options:
+					port: 5555
+					hostname: '*'
+					base: 'out'
+					livereload: true
+					# open: true
+
+		# clean out dir
+		clean:
+			options:
+				force: true
+			out: ['out']
+			sass: ['out/sass']
+
+		'gh-pages':
+			options:
+				base: 'out'
+				branch: 'master'
+			src: ['**/*']
+
 
 	# Build the available Grunt tasks.
 	grunt.loadNpmTasks 'grunt-contrib-cssmin'
 	grunt.loadNpmTasks 'grunt-contrib-jshint'
 	grunt.loadNpmTasks 'grunt-contrib-clean'
+	grunt.loadNpmTasks 'grunt-contrib-copy'
+	grunt.loadNpmTasks 'grunt-contrib-connect'
 	grunt.loadNpmTasks 'grunt-contrib-htmlmin'
 	grunt.loadNpmTasks 'grunt-contrib-uglify'
+	grunt.loadNpmTasks 'grunt-contrib-watch'
 	grunt.loadNpmTasks 'grunt-modernizr'
 	grunt.loadNpmTasks 'grunt-shell'
 	grunt.loadNpmTasks 'grunt-postcss'
 	grunt.loadNpmTasks 'grunt-sass'
+	grunt.loadNpmTasks 'grunt-gh-pages'
 
 	# Register our Grunt tasks.
-	grunt.registerTask 'default',       ['sass', 'postcss']
+	grunt.registerTask 'ghpublish',     ['clean:out', 'default', 'clean:sass', 'gh-pages']
+	grunt.registerTask 'server',        ['connect', 'watch']
+	grunt.registerTask 'dev',           ['clean:out', 'default', 'server']
+	grunt.registerTask 'default',       ['sass', 'postcss', 'copy']
