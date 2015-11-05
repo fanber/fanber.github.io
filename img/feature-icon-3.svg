@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (375) - http://www.bohemiancoding.com/sketch -->
+    <title>feature-icon-3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="13.9160156%" fx="50%" fy="13.9160156%" r="92.2412109%" id="radialGradient-1">
+            <stop stop-color="#3D99FC" offset="0%"></stop>
+            <stop stop-color="#064C94" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="80" height="80" rx="3"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Homepage-ver-1" sketch:type="MSArtboardGroup" transform="translate(-820.000000, -832.000000)">
+            <g id="features" sketch:type="MSLayerGroup" transform="translate(160.000000, 772.000000)">
+                <g id="feature-icon-3" transform="translate(660.000000, 60.000000)">
+                    <g id="Rectangle-16-Copy-2">
+                        <use fill="url(#radialGradient-1)" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                        <use fill="none" xlink:href="#path-2"></use>
+                    </g>
+                    <rect id="Rectangle-23" stroke="#FFFFFF" stroke-width="2" sketch:type="MSShapeGroup" x="4" y="4" width="72" height="72" rx="2"></rect>
+                    <g id="noun_8675-copy" transform="translate(16.000000, 16.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                        <rect id="Rectangle-path" x="0" y="45.33312" width="48" height="2.66688"></rect>
+                        <path d="M3.99984,36 L1.33344,36 C0.5976,36 0,36.59616 0,37.33344 L0,42.66672 L5.33328,42.66672 L5.33328,37.33344 C5.33328,36.59616 4.73616,36 3.99984,36 L3.99984,36 Z" id="Shape"></path>
+                        <path d="M14.6664,27.99984 L12,27.99984 C11.26368,27.99984 10.66656,28.596 10.66656,29.33328 L10.66656,42.66624 L15.99984,42.66624 L15.99936,29.33328 C15.99984,28.59648 15.40224,27.99984 14.6664,27.99984 L14.6664,27.99984 Z" id="Shape"></path>
+                        <path d="M25.33344,30.66672 L22.66656,30.66672 C21.93072,30.66672 21.33312,31.26336 21.33312,32.00016 L21.3336,42.66672 L26.66688,42.66672 L26.66688,32.00016 C26.66688,31.26288 26.06928,30.66672 25.33344,30.66672 L25.33344,30.66672 Z" id="Shape"></path>
+                        <path d="M36,20.66688 L33.33312,20.66688 C32.59728,20.66688 31.99968,21.26304 31.99968,22.00032 L32.00016,42.66672 L37.33344,42.66672 L37.33344,22.00032 C37.33344,21.26304 36.73584,20.66688 36,20.66688 L36,20.66688 Z" id="Shape"></path>
+                        <path d="M46.66656,4.66656 L43.99968,4.66656 C43.26384,4.66656 42.66624,5.2632 42.66624,6 L42.66624,42.66672 L48,42.66672 L48,6 C48,5.2632 47.4024,4.66656 46.66656,4.66656 L46.66656,4.66656 Z" id="Shape"></path>
+                        <g id="Group" transform="translate(1.920000, 0.000000)">
+                            <path d="M8.07984,14.05248 L8.07984,12 L6.07968,12 L6.07968,15.40032 C7.60128,15.70992 8.74656,17.05488 8.74656,18.66672 C8.74656,20.508 7.25424,22.00032 5.41344,22.00032 C3.57312,22.00032 2.08032,20.508 2.08032,18.66672 C2.08032,17.05488 3.2256,15.70992 4.74672,15.40128 L4.74672,2.6688 L4.7472,2.6688 L4.74672,2.66688 C4.74672,2.29872 5.04528,2.00016 5.41344,2.00016 C5.7816,2.00016 6.08016,2.2992 6.08016,2.66688 L6.08016,2.6688 L6.08016,4.00032 L8.08032,4.00032 L8.08032,2.66688 C8.07984,1.19376 6.8856,0 5.41344,0 C3.94128,0 2.74656,1.19376 2.74656,2.66688 L2.74656,14.05296 C1.1544,14.97552 0.07968,16.6944 0.07968,18.66672 C0.08016,21.612 2.46768,24 5.41344,24 C8.3592,24 10.74672,21.612 10.74672,18.66672 C10.74672,16.69392 9.67248,14.97504 8.07984,14.05248 L8.07984,14.05248 Z" id="Shape"></path>
+                            <rect id="Rectangle-path" x="6.08016" y="8.66688" width="2.00016" height="2.00016"></rect>
+                            <rect id="Rectangle-path" x="6.08016" y="5.33328" width="2.00016" height="2.00016"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
