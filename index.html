@@ -2,15 +2,41 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=480, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>fanber</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/template.css">
 </head>
-<body class="allpage-bg">
+<body class="allpage-bg" id="top">
     <div class="allpage-container">
-
-        <div id="top" class="allpage-section vspace-section bg-style-cover-radial" style="overflow:hidden">
+        <header class="allpage-section pageheader bg-linegreen">
+            <a href="/" class="logo pageheader--left">
+                <img src="/img/fanber-logo-with-text.svg" alt="Fanber — вентиляционные системы">
+            </a>
+            <div class="pageheader--right header-contacts pseudotable pseudotable-vamiddle pseudotable-spacing">
+                <span class="pseudotable--cell">
+                    <span class="inline-block nowrap display-3"><span class="text-muted">+375 29</span> 567-89-55</span>
+                    <br>
+                    <span class="inline-block nowrap display-3"><span class="text-muted">+375 17</span> 205-03-62</span>
+                </span>
+                <a href="#" class="pseudotable--cell header-contacts-callback">Заказать обратный звонок</a>
+            </div>
+            <nav class="pageheader--middle mainnav">
+                <ul class="mainnav-container">
+                    <li class="mainnav--item">
+                        <a href="#products" class="mainnav-link">Продукция</a>
+                        <span class="inline-block nowrap">
+                            <a href="#" class="btn btn-sm btn-primary">Каталог</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Прайс</a>
+                        </span>
+                    </li>
+                    <li class="mainnav--item"><a href="#shipping" class="mainnav-link">Доставка и гарантия</a></li>
+                    <li class="mainnav--item"><a href="#mainternance" class="mainnav-link">Сервисное обслуживание</a></li>
+                    <li class="mainnav--item"><a href="#company" class="mainnav-link">О компании</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="allpage-section vspace-section bg-style-cover-radial" style="overflow:hidden">
             <div class="row">
                 <div class="col-lg-4">
                     <img src="/img/cover-graphics.png" alt="" class="img-responsive">
@@ -231,7 +257,7 @@
                     </div>
                     <div class="col-sm-8 col-md-3 col-lg-3">
                         <p><strong>Сервисное обслуживание</strong></p>
-                        <p class="display-1">+375 29 XXX-XX-XX</p>
+                        <p class="display-2">+375 29 XXX-XX-XX</p>
                         <p class="compact">Время работы: 9:00 — 18:00</p>
                     </div>
                 </div>
@@ -273,12 +299,17 @@
                     <p>ООО «Фанбер Групп»
                     <br>220073, г. Минск, ул. Ольшевского, д. 24, пом. 2, к. 218.</p>
                     <p><a href="mailto:belfanber@gmail.com">belfanber@gmail.com</a></p>
-                    <p><strong>+375 17 205-03-62</strong>
-                    <br><strong>+375 29 567-89-55</strong>
-                    по всем вопросам</p>
+                    <p class="pseudotable pseudotable-vamiddle pseudotable-spacing">
+                        <span class="pseudotable--cell nowrap">
+                            <strong class="display-2">+375 17 205-03-62</strong>
+                        <br><strong class="display-2">+375 29 567-89-55</strong>
+                        </span>
+                        <span class="pseudotable--cell pseudotable-bracket"></span>
+                        <span class="pseudotable--cell small">по всем вопросам</span>
+                    </p>
                     <p>
-                        <strong>+375 20 xxx-xx-xx</strong> — сервисное обслуживание <br>
-                        <strong>+375 29 612-81-51</strong> — оборудование «Поток»
+                        <strong>+375 20 xxx-xx-xx</strong><span class="small"> — сервисное обслуживание</span> <br>
+                        <strong>+375 29 612-81-51</strong><span class="small"> — оборудование «Поток»</span>
                     </p>
                     <p>Время работы офиса:  9:00 — 18:00</p>
                 </div>
