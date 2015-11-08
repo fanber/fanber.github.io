@@ -106,7 +106,8 @@ $container-max-widths: (
   sm: 34rem,    // 480
   md: 45rem,    // 720
   lg: 60rem,    // 960
-  xl: 72.25rem  // 1140
+  xl: 72.25rem, // 1140
+  xxl: 80rem    // 1280
 ) !default;
 
 
@@ -160,8 +161,8 @@ $font-size-h5:               1.0rem !default;  //16px
 $font-size-h6:               0.875rem !default;//14px
 
 $display1-size:               2rem !default; //32px
-$display2-size:               1.375rem !default;
-$display3-size:               5.5rem !default;
+$display2-size:               1.375rem !default; //22px
+$display3-size:               1.25rem !default; //20px
 $display4-size:               6rem !default;
 
 $display1-weight:             400 !default;
@@ -171,7 +172,7 @@ $display4-weight:             400 !default;
 
 $display1-line-height:        1.8 !default;
 $display2-line-height:        1.1 !default;
-$display3-line-height:        1.2 !default;
+$display3-line-height:        1.4 !default;
 $display4-line-height:        1.1 !default;
 
 // global text

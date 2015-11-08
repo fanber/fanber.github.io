@@ -1,0 +1,45 @@
+.pageheader {
+    padding-top: 35px;
+    padding-bottom: 15px;
+
+    .pageheader--left,
+    .pageheader--middle,
+    .pageheader--right {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up(sm) {
+
+        .pageheader--left {
+            float: left;
+        }
+
+        .pageheader--right {
+            float: right;
+        }
+
+        .pageheader--middle {
+            clear: both;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+
+        .pageheader--left {
+            float: left;
+        }
+
+        .pageheader--right {
+            float: right;
+        }
+
+        .pageheader--middle {
+            clear: none;
+            margin-left: 205px;
+            margin-right: 280px;
+        }
+    }
+
+}
+

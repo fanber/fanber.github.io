@@ -1,0 +1,56 @@
+.mainnav {
+
+}
+
+/*ul*/.mainnav-container {
+    display: block;
+    list-style-type: none;
+    margin: 0 0 20px;
+    padding: 0;
+
+    .mainnav--item {
+        padding: 10px 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+        display: table;
+        width: 100%;
+
+        .mainnav--item {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0px 10px;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .mainnav--item {
+            padding: 0px 10px;
+
+            &:first-child {
+                padding-left: 20px;
+            }
+
+            &:last-child {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+.mainnav-link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #055AC8;
+}
