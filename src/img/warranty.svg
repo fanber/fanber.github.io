@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="101px" height="140px" viewBox="0 0 101 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (375) - http://www.bohemiancoding.com/sketch -->
+    <title>warranty</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Homepage-ver-1" sketch:type="MSArtboardGroup" transform="translate(-1129.000000, -2875.000000)">
+            <g id="warranty" sketch:type="MSLayerGroup" transform="translate(1129.000000, 2875.000000)">
+                <rect id="Rectangle-52" stroke="#153D71" stroke-width="8" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="101" height="140" rx="8"></rect>
+                <text id="5" sketch:type="MSTextLayer" font-family="Hiragino Kaku Gothic StdN" font-size="72" font-weight="633" fill="#153D71">
+                    <tspan x="23" y="78">5</tspan>
+                </text>
+                <text id="лет" sketch:type="MSTextLayer" font-family="DIN Alternate" font-size="32" font-weight="bold" fill="#153D71">
+                    <tspan x="27" y="105">лет</tspan>
+                </text>
+                <text id="гарантии" sketch:type="MSTextLayer" font-family="DIN Alternate" font-size="12" font-weight="bold" fill="#153D71">
+                    <tspan x="26" y="119">гарантии</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+/*
+@styleguide
+
+# Vspace
+
+Классы для управления вертикальными отступами
+
+*/
+
+.vspace-section,
+.vspace-p3x {
+    padding-top: ($spacer * 3);
+    padding-bottom: ($spacer * 3);
+}
+
+
+.vspace-p6x-top { padding-top: ($spacer * 6); }
+.vspace-p3x-top { padding-top: ($spacer * 3); }
+.vspace-p2x-top { padding-top: ($spacer * 2); }
+.vspace-p1x-top { padding-top: ($spacer); }
+
+.vspace-p6x-bottom { padding-bottom: ($spacer * 6); }
+.vspace-p3x-bottom { padding-bottom: ($spacer * 3); }
+.vspace-p2x-bottom { padding-bottom: ($spacer * 2); }
+.vspace-p1x-bottom { padding-bottom: ($spacer); }
+
+.vspace-m6x-top { margin-top: ($spacer * 6); }
+.vspace-m3x-top { margin-top: ($spacer * 3); }
+.vspace-m2x-top { margin-top: ($spacer * 2); }
+.vspace-m1x-top { margin-top: ($spacer); }
+
+.vspace-m6x-bottom { margin-bottom: ($spacer * 6); }
+.vspace-m3x-bottom { margin-bottom: ($spacer * 3); }
+.vspace-m2x-bottom { margin-bottom: ($spacer * 2); }
+.vspace-m1x-bottom { margin-bottom: ($spacer); }
+

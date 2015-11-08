@@ -1,7 +1,5 @@
 # Grunt Configuration
 # http://gruntjs.com/getting-started#an-example-gruntfile
-fs = require('fs')
-processedCSS = fs.readFileSync('out/css/template.css', 'utf-8');
 
 module.exports = (grunt) ->
 
@@ -21,36 +19,29 @@ module.exports = (grunt) ->
 		postcss:
 			options:
 				# map: true # inline sourcemaps
-
 				# or
 				map:
 					inline: false # save all sourcemaps as separate files...
 					annotation: 'out/css/' # ...to the specified directory
-
-				processors: [
-					require('pixrem')() # add fallbacks for rem units
-					require('postcss-style-guide')({
-						name: 'fanber.by',
-						processedCSS: processedCSS,
-						dir: 'out/docs'
-					})
-					require('autoprefixer')({browsers: [
-						'Android 2.3'
-						'Android >= 4'
-						'Chrome >= 20'
-						'Firefox >= 24'
-						'Explorer >= 8'
-						'iOS >= 6'
-						'Opera >= 12'
-						'Safari >= 6'
-					]}) # add vendor prefixes
-					# require('cssnano')() # minify the result
-				]
 			dist:
+				options:
+					processors: [
+						require('pixrem')() # add fallbacks for rem units
+						require('autoprefixer')({browsers: [
+							'Android 2.3'
+							'Android >= 4'
+							'Chrome >= 20'
+							'Firefox >= 24'
+							'Explorer >= 8'
+							'iOS >= 6'
+							'Opera >= 12'
+							'Safari >= 6'
+						]}) # add vendor prefixes
+					]
 				src: 'out/css/template.css'
 
 		copy:
-			main:
+			dist:
 				files: [{
 					expand: true
 					cwd: 'src/'
@@ -76,10 +67,6 @@ module.exports = (grunt) ->
 					expand: true
 					cwd: 'out/'
 					src: [
-						'20*/**/*.html'
-						'!2014/markdown_cheatsheet/*.html'
-						'tags/**/*.html'
-						'search/**/*.html'
 						'*.html'
 						'!google*.html'
 						'!yandex*.html'
@@ -203,7 +190,8 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-gh-pages'
 
 	# Register our Grunt tasks.
+
 	grunt.registerTask 'ghpublish',     ['clean:out', 'default', 'clean:sass', 'gh-pages']
 	grunt.registerTask 'server',        ['connect', 'watch']
 	grunt.registerTask 'dev',           ['clean:out', 'default', 'server']
-	grunt.registerTask 'default',       ['sass', 'postcss', 'copy']
+	grunt.registerTask 'default',       ['sass', 'postcss:dist', 'copy']

@@ -1,0 +1,83 @@
+/*
+@styleguide
+
+*/
+
+
+.bg-style-flat1 {
+    background: #EFF4F8;
+}
+
+.bg-style-flat2 {
+    background: #EFF4F8;
+}
+
+.bg-style-flat3 {
+    background: #F8F7EF;
+}
+
+.bg-style-cover-radial {
+
+    @include media-breakpoint-down(lg) {
+        background-image: radial-gradient(at top right, #CEE8F1 0%, #FFFFFF 66%);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+    }
+
+    @include media-breakpoint-up(lg) {
+        background-image: radial-gradient(at top right, #CEE8F1 0%, #FFFFFF 66%);
+    }
+}
+
+.bg-style-warm-to-cold {
+    background-image: linear-gradient( 90deg, #F3F2EB 0%, #DEEFFA 100%);
+}
+
+.bg-style-cold-to-warm {
+    background-image: linear-gradient( 90deg, #DBEFFB 0%, #DBEFE5 100%);
+}
+
+.bg-linegreen {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, #B4EC51 0%, #429321 100%);
+    }
+}
+
+.bg-lineblue {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, #3894F4 0%, #094F98 99%);
+    }
+}
+
+.bg-lineorange {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, #FBC83C 0%, #D28914 100%);
+    }
+}
