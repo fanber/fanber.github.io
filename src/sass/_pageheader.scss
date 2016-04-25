@@ -1,6 +1,7 @@
 .pageheader {
     padding-top: 35px;
     padding-bottom: 15px;
+    @include clearfix;
 
     .pageheader--left,
     .pageheader--middle,
@@ -26,18 +27,19 @@
 
     @include media-breakpoint-up(xl) {
 
-        .pageheader--left {
-            float: left;
-        }
-
-        .pageheader--right {
-            float: right;
-        }
-
         .pageheader--middle {
             clear: none;
             margin-left: 205px;
             margin-right: 280px;
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+
+        .pageheader--middle {
+            clear: none;
+            margin-left: 225px;
+            margin-right: 300px;
         }
     }
 
